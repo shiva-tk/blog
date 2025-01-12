@@ -1,0 +1,106 @@
+#+hugo_base_dir: ../
+
+* Computing :@computing:
+
+** DONE Note Taking with Emacs and Org Roam :emacs:org:
+CLOSED: [2025-01-12 Sun 15:18]
+:PROPERTIES:
+:EXPORT_FILE_NAME: note-taking-with-emacs-and-org-roam
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-01-12 Sun 15:18]
+:END:
+
+I've recently started working on my master's thesis, and as such I've been looking for a
+good way to take notes. I need to be able to capture notes on my reading, as well as any
+ideas or thoughts that I have. I've previously experimented with:
+
+- *Notion* - I did like how feature rich it was, but I disliked the rigid organisation
+  structure. I felt forced to organise everything into a heirarchical pages and sub-pages.
+  Also, it felt like once I committed to /Notion/, it wouldn't be possible to switch
+  platforms if I wanted to.
+
+- *Obsidian* - Based on my issues with /Notion/, it would seem like this is the answer.
+  I liked the [[https://zettelkasten.de/introduction/][zettlekasten]] approach to note taking - it felt more unstructured
+  and aligned better with how ideas and thoughts naturally arise. I also really liked the
+  idea of all my notes being stored locally as text files. It seemed like the perfect
+  solution... until I saw the power of /Emacs/ and /Org./
+
+*** Why Org?
+
+I was drawn to how extensible it is - the ability to completely customise a workflow to match
+your exact purposes is unmatched. I was also drawn to the rich set of features it supports, whilst
+still being based entirely on text. I don't think I'll do the best job of selling
+just how amazing this seemingly simplistic piece of software is, but there is a lot of discourse
+regarding this topic on the internet already.
+
+*** Setting up A Zettlekasten with Org Roam
+
+#+caption: Graph view of my notes so far
+#+name: roam-graph
+[[/images/roam-graph.png]]
+
+[[https://www.orgroam.com][Org roam]] is an extension of org mode, which facilitates "networked thought", similar to tools like
+/Roam Research/ or /Obsidian./ The key feature of this extension is the ability to seamlessly link
+together org files. It also indexes this network of files, allowing to quickly search and jump
+between these files. Lastly, it surfaces /backlinks/, which are references
+to the current file inside other files. The idea is that these backlinks give contextual
+information and help you easily traverse your network of thoughts.
+
+#+caption: An example note, showcasing inline LaTeX rendering, and backlinks
+#+name: roam-preview
+[[/images/roam-preview.png]]
+
+Out of the box, it is already a very useful tool. I've been using it to build up a sort of
+second brain - I use it to capture most of the thoughts I have, about any topic.
+It pairs brilliantly with org mode's organisational and task tracking features (which I may cover
+in a future blog post).
+
+**** Capturing Thoughts
+
+/Org roam/ ships with an excellent feature, called /dailies/. These are daily notes which you can
+easily capture to with a convenient keybinding:
+
+#+caption: Capturing a daily note
+#+name: roam-daily
+[[/images/roam-daily.gif]]
+
+I use this to capture incomplete thoughts and ideas as they come up, and hopefully flesh them out into
+fully fledged entries in the zettlekasten. I can flag these ideas that I want to revisit with the ~IDEA~ keyword
+I also use /dailies/ to maintain journal - it is quite interesting to look back on past entries!
+
+**** Processing Captured Thoughts
+
+I then search for anything flagged with the ~IDEA~ keyword through org mode's in-built agenda feature.
+This has been a very useful feature - it means that I actually action ideas I have, rather than forgetting
+about them, or making a note which I never revisit.
+
+**** Bibliography Management
+
+As an example of how extensible org mode is, let's explore how I've integrated
+bibliography / citation management into my note taking workflow.
+[[https://www.riccardopinosio.com/blog/posts/zotero_notes_article][This article]] gives much more detail on how to set this up. You can also have a look at
+my [[https://github.com/shiva-tk/dots][dotfiles]] for more details.
+
+***** Zotero
+[[https://www.zotero.org][Zotero]] is a bibliography management tool. Using a browser extension, I can save research papers
+to my library with a single click. Using the /better bibtex/ extension for zotero, I have set up
+an automatic export of this library to /bibtex/.
+
+***** Citations in Org Mode
+Using this bibtex file, I can easily insert a citation for any paper in my library:
+
+#+caption: Inserting a citation
+#+name: org-cite-insert
+[[/images/org-cite.gif]]
+
+I can also quickly open up a paper from my library which I've referenced in a note:
+
+#+caption: Opening a referenced paper
+#+name: org-cite-open
+[[/images/org-cite-open.gif]]
+
+*** And More...
+
+This is just a glimpse into what's possible. In future posts I may cover how I track tasks
+with org mode.

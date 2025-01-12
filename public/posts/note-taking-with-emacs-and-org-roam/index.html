@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Note Taking with Emacs and Org Roam</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+    <link href="https://iosevka-webfonts.github.io/iosevka/Iosevka.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+</head>
+<body>
+	<header>
+	<h1>shiva t.k...</h1>
+	<p>
+	<div style="float: right;">just some thoughts.</div>
+	<nav>
+			<a class="menu" href="/">[start.]</a>
+			
+			
+			<a class="menu" href="/posts/">[posts.]</a>
+			
+			<a class="menu" href="/categories/">[categories.]</a>
+			
+			<a class="menu" href="/tags/">[tags.]</a>
+			
+	</nav>
+	</p>
+	
+	<hr>
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Note Taking with Emacs and Org Roam</h1>
+			<b><time>12/01/2025 15:18</time></b>
+		       
+		           <a href="/tags/emacs">emacs</a>
+        	       
+		           <a href="/tags/org">org</a>
+        	       
+
+			<div>
+				<p>I&rsquo;ve recently started working on my master&rsquo;s thesis, and as such I&rsquo;ve been looking for a
+good way to take notes. I need to be able to capture notes on my reading, as well as any
+ideas or thoughts that I have. I&rsquo;ve previously experimented with:</p>
+<ul>
+<li>
+<p><strong>Notion</strong> - I did like how feature rich it was, but I disliked the rigid organisation
+structure. I felt forced to organise everything into a heirarchical pages and sub-pages.
+Also, it felt like once I committed to <em>Notion</em>, it wouldn&rsquo;t be possible to switch
+platforms if I wanted to.</p>
+</li>
+<li>
+<p><strong>Obsidian</strong> - Based on my issues with <em>Notion</em>, it would seem like this is the answer.
+I liked the <a href="https://zettelkasten.de/introduction/">zettlekasten</a> approach to note taking - it felt more unstructured
+and aligned better with how ideas and thoughts naturally arise. I also really liked the
+idea of all my notes being stored locally as text files. It seemed like the perfect
+solution&hellip; until I saw the power of <em>Emacs</em> and <em>Org.</em></p>
+</li>
+</ul>
+<h2 id="why-org">Why Org?</h2>
+<p>I was drawn to how extensible it is - the ability to completely customise a workflow to match
+your exact purposes is unmatched. I was also drawn to the rich set of features it supports, whilst
+still being based entirely on text. I don&rsquo;t think I&rsquo;ll do the best job of selling
+just how amazing this seemingly simplistic piece of software is, but there is a lot of discourse
+regarding this topic on the internet already.</p>
+<h2 id="setting-up-a-zettlekasten-with-org-roam">Setting up A Zettlekasten with Org Roam</h2>
+<p><a id="figure--roam-graph"></a></p>
+<figure><img src="/images/roam-graph.png"
+    alt="Figure 1: Graph view of my notes so far"><figcaption>
+      <p><span class="figure-number">Figure 1: </span>Graph view of my notes so far</p>
+    </figcaption>
+</figure>
+
+<p><a href="https://www.orgroam.com">Org roam</a> is an extension of org mode, which facilitates &ldquo;networked thought&rdquo;, similar to tools like
+<em>Roam Research</em> or <em>Obsidian.</em> The key feature of this extension is the ability to seamlessly link
+together org files. It also indexes this network of files, allowing to quickly search and jump
+between these files. Lastly, it surfaces <em>backlinks</em>, which are references
+to the current file inside other files. The idea is that these backlinks give contextual
+information and help you easily traverse your network of thoughts.</p>
+<p><a id="figure--roam-preview"></a></p>
+<figure><img src="/images/roam-preview.png"
+    alt="Figure 2: An example note, showcasing inline LaTeX rendering, and backlinks"><figcaption>
+      <p><span class="figure-number">Figure 2: </span>An example note, showcasing inline LaTeX rendering, and backlinks</p>
+    </figcaption>
+</figure>
+
+<p>Out of the box, it is already a very useful tool. I&rsquo;ve been using it to build up a sort of
+second brain - I use it to capture most of the thoughts I have, about any topic.
+It pairs brilliantly with org mode&rsquo;s organisational and task tracking features (which I may cover
+in a future blog post).</p>
+<h3 id="capturing-thoughts">Capturing Thoughts</h3>
+<p><em>Org roam</em> ships with an excellent feature, called <em>dailies</em>. These are daily notes which you can
+easily capture to with a convenient keybinding:</p>
+<p><a id="figure--roam-daily"></a></p>
+<figure><img src="/images/roam-daily.gif"
+    alt="Figure 3: Capturing a daily note"><figcaption>
+      <p><span class="figure-number">Figure 3: </span>Capturing a daily note</p>
+    </figcaption>
+</figure>
+
+<p>I use this to capture incomplete thoughts and ideas as they come up, and hopefully flesh them out into
+fully fledged entries in the zettlekasten. I can flag these ideas that I want to revisit with the <code>IDEA</code> keyword
+I also use <em>dailies</em> to maintain journal - it is quite interesting to look back on past entries!</p>
+<h3 id="processing-captured-thoughts">Processing Captured Thoughts</h3>
+<p>I then search for anything flagged with the <code>IDEA</code> keyword through org mode&rsquo;s in-built agenda feature.
+This has been a very useful feature - it means that I actually action ideas I have, rather than forgetting
+about them, or making a note which I never revisit.</p>
+<h3 id="bibliography-management">Bibliography Management</h3>
+<p>As an example of how extensible org mode is, let&rsquo;s explore how I&rsquo;ve integrated
+bibliography / citation management into my note taking workflow.
+<a href="https://www.riccardopinosio.com/blog/posts/zotero_notes_article">This article</a> gives much more detail on how to set this up. You can also have a look at
+my <a href="https://github.com/shiva-tk/dots">dotfiles</a> for more details.</p>
+<h4 id="zotero">Zotero</h4>
+<p><a href="https://www.zotero.org">Zotero</a> is a bibliography management tool. Using a browser extension, I can save research papers
+to my library with a single click. Using the <em>better bibtex</em> extension for zotero, I have set up
+an automatic export of this library to <em>bibtex</em>.</p>
+<h4 id="citations-in-org-mode">Citations in Org Mode</h4>
+<p>Using this bibtex file, I can easily insert a citation for any paper in my library:</p>
+<p><a id="figure--org-cite-insert"></a></p>
+<figure><img src="/images/org-cite.gif"
+    alt="Figure 4: Inserting a citation"><figcaption>
+      <p><span class="figure-number">Figure 4: </span>Inserting a citation</p>
+    </figcaption>
+</figure>
+
+<p>I can also quickly open up a paper from my library which I&rsquo;ve referenced in a note:</p>
+<p><a id="figure--org-cite-open"></a></p>
+<figure><img src="/images/org-cite-open.gif"
+    alt="Figure 5: Opening a referenced paper"><figcaption>
+      <p><span class="figure-number">Figure 5: </span>Opening a referenced paper</p>
+    </figcaption>
+</figure>
+
+<h2 id="and-more-dot-dot-dot">And More&hellip;</h2>
+<p>This is just a taste of what&rsquo;s possible. In future posts I may cover how I track tasks
+with org mode.</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/posts/note-taking-with-emacs-and-org-roam/">Note Taking with Emacs and Org Roam</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<hr>
+
+	<p> <a class="menu" href="https://www.shiva-tk.xyz">[shiva t.k...]</a>
+	<a class="menu" href="mailto:shivatk01@gmail.com">[shivatk01@gmail.com.]</a>
+	<a class="menu" href="https://github.com/shiva-tk">[github.]</a>
+	<a class="menu" href="https://www.linkedin.com/in/shiva-tk/">[linkedin.]</a>
+	<a class="menu" href="https://www.last.fm/user/shivatk">[last.fm.]</a>
+	<a class="menu" href="https://boxd.it/1FqGJ">[letterboxd.]</a>
+	</p>
+</footer>
+
+</body>
+</html>

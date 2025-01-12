@@ -1,0 +1,58 @@
+baseURL = 'https://blog.shiva-tk.xyz/'
+languageCode = 'en-us'
+title = 'shiva t.k...'
+theme = "smol"
+
+# Parameters
+[params]
+    subtitle = "just some thoughts."
+    dateFmt = "02/01/2006 15:04"
+
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "posts"
+        url = "/posts/"
+        weight = 1
+
+  [[menu.main]]
+        identifier = "categories"
+        name = "categories"
+        url = "/categories/"
+        weight = 2
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "tags"
+        url = "/tags/"
+        weight = 3
+
+# Footer
+  [[menu.footer]]
+        name = "shivatk01@gmail.com"
+        url = "mailto:shivatk01@gmail.com"
+        weight = 1
+
+  [[menu.footer]]
+        name = "github"
+        url = "https://github.com/shiva-tk"
+        weight = 2
+
+  [[menu.footer]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/shiva-tk/"
+        weight = 3
+
+  [[menu.footer]]
+        name = "letterboxd"
+        url = "https://boxd.it/1FqGJ"
+        weight = 4
+
+  [[menu.footer]]
+        name = "last.fm"
+        url = "https://www.last.fm/user/shivatk"
+        weight = 4
+
+[markup.goldmark.renderer]
+  unsafe = true

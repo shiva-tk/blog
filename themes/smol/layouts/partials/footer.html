@@ -1,0 +1,9 @@
+<footer>
+	<hr>
+
+	<p> <a class="menu" href="https://www.shiva-tk.xyz">[{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}]</a>
+	{{- range .Site.Menus.footer }}
+	<a class="menu" href="{{ .URL }}">[{{ .Name }}.]</a>
+        {{- end }}
+	</p>
+</footer>

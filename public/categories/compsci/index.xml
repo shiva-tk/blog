@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compsci on shiva t.k...</title>
+    <link>http://localhost:1313/categories/compsci/</link>
+    <description>Recent content in Compsci on shiva t.k...</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2025 13:39:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/compsci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note Taking with Emacs and Org Roam</title>
+      <link>http://localhost:1313/posts/note-taking-with-emacs-and-org-roam/</link>
+      <pubDate>Fri, 10 Jan 2025 13:39:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/note-taking-with-emacs-and-org-roam/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently started working on my master&amp;rsquo;s thesis, and as such I was looking for a&#xA;good way to&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

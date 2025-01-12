@@ -1,0 +1,68 @@
+html {overflow-y: scroll}
+:root { --bgcolor: #fafafa; --fontcolor: #383a42; --linkcolor: #8a3b3c; --visitedcolor: #8a3b3c; --precolor: #fafafa; --prebgcolor: #383a42;}
+@media (prefers-color-scheme: dark) { :root { --bgcolor: #383a42; --fontcolor: #fafafa; --linkcolor: #e45649; --visitedcolor: #e45649; --precolor: #fafafa; --prebgcolor: #383a42;}}
+body{max-width:800px;margin:40px auto;padding:0 10px;font:14px/1.5 "Iosevka Web", monospace;color:var(--fontcolor); background: var(--bgcolor)}a:link{color: var(--linkcolor)}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}h1,h2,h3{line-height:1.2}
+p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
+article{padding:24px 0}
+.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+figcaption {color: #c6c7c7; font: 12px/1.5 "Iosevka Web", monospace; text-align: center;}
+figure {margin: auto}
+img {display: block; max-width: 100%; height: auto; margin: auto}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+li {
+    position: relative; /* Enable positioning for pseudo-element */
+    padding-left: 40px; /* Space for the custom bullet */
+    padding-top: 7px; /* Adjust spacing if necessary */
+}
+
+li::before {
+    content: ">"; /* Use > as the bullet symbol */
+    position: absolute; /* Position it to the left of the text */
+    left: 0; /* Align to the left padding */
+    color: #e45649; /* Customize color if desired */
+    font-weight: bold;
+}
+
+/* Remove margins from <p> inside <li> */
+li > p {
+    margin: 0;
+}
+
+/* Optional: Add spacing between list items for readability */
+ul > li + li {
+    margin-top: 10px; /* Adjust as needed */
+}
+
+
+a {
+    color: #8a3b3c;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color:#e45649;
+}
+
+a.selected {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.menu {
+    text-decoration: none;
+}
+
+hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #c6c7c7;
+}

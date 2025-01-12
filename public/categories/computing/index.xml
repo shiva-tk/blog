@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computing on shiva t.k...</title>
+    <link>http://localhost:1313/categories/computing/</link>
+    <description>Recent content in Computing on shiva t.k...</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jan 2025 15:18:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note Taking with Emacs and Org Roam</title>
+      <link>http://localhost:1313/posts/note-taking-with-emacs-and-org-roam/</link>
+      <pubDate>Sun, 12 Jan 2025 15:18:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/note-taking-with-emacs-and-org-roam/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently started working on my master&amp;rsquo;s thesis, and as such I&amp;rsquo;ve been looking for a&#xA;good way to take notes. I need to be able to capture notes on my reading, as well as any&#xA;ideas or thoughts that I have. I&amp;rsquo;ve previously experimented with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Notion&lt;/strong&gt; - I did like how feature rich it was, but I disliked the rigid organisation&#xA;structure. I felt forced to organise everything into a heirarchical pages and sub-pages.&#xA;Also, it felt like once I committed to &lt;em&gt;Notion&lt;/em&gt;, it wouldn&amp;rsquo;t be possible to switch&#xA;platforms if I wanted to.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
