@@ -1,6 +1,6 @@
 #+hugo_base_dir: ../
 
-* Computing :@computing:
+* Research :@research:
 
 ** DONE Note Taking with Emacs and Org Roam :emacs:org:
 CLOSED: [2025-01-12 Sun 15:18]
