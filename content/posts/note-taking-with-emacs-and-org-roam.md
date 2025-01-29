@@ -7,6 +7,10 @@ categories = ["research"]
 draft = false
 +++
 
+<a id="figure--roam-graph"></a>
+
+{{< figure src="/images/roam-graph.png" caption="<span class=\"figure-number\">Figure 1: </span>Graph view of my notes so far" >}}
+
 I've recently started working on my master's thesis, and as such I've been looking for a
 good way to take notes. I need to be able to capture notes on my reading, as well as any
 ideas or thoughts that I have. I've previously experimented with:
@@ -33,10 +37,6 @@ regarding this topic on the internet already.
 
 
 ## Setting up A Zettlekasten with Org Roam {#setting-up-a-zettlekasten-with-org-roam}
-
-<a id="figure--roam-graph"></a>
-
-{{< figure src="/images/roam-graph.png" caption="<span class=\"figure-number\">Figure 1: </span>Graph view of my notes so far" >}}
 
 [Org roam](https://www.orgroam.com) is an extension of org mode, which facilitates "networked thought", similar to tools like
 _Roam Research_ or _Obsidian._ The key feature of this extension is the ability to seamlessly link
