@@ -3,7 +3,7 @@ title = "Note Taking with Emacs and Org Roam"
 author = ["Shiva Tamil Kumaran"]
 date = 2025-01-12T15:18:00+00:00
 tags = ["emacs", "org"]
-categories = ["computing"]
+categories = ["research"]
 draft = false
 +++
 
@@ -108,5 +108,5 @@ I can also quickly open up a paper from my library which I've referenced in a no
 
 ## And More... {#and-more-dot-dot-dot}
 
-This is just a taste of what's possible. In future posts I may cover how I track tasks
+This is just a glimpse into what's possible. In future posts I may cover how I track tasks
 with org mode.
