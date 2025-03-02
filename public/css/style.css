@@ -1,6 +1,5 @@
 html {overflow-y: scroll}
 :root { --bgcolor: #fafafa; --fontcolor: #383a42; --linkcolor: #8a3b3c; --visitedcolor: #8a3b3c; --precolor: #fafafa; --prebgcolor: #383a42;}
-@media (prefers-color-scheme: dark) { :root { --bgcolor: #383a42; --fontcolor: #fafafa; --linkcolor: #e45649; --visitedcolor: #e45649; --precolor: #fafafa; --prebgcolor: #383a42;}}
 body{max-width:800px;margin:40px auto;padding:0 10px;font:14px/1.5 "Iosevka Web", monospace;color:var(--fontcolor); background: var(--bgcolor)}a:link{color: var(--linkcolor)}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}h1,h2,h3{line-height:1.2}
 p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
 code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
