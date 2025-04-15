@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on shiva t.k...</title>
+    <link>http://localhost:1313/categories/misc/</link>
+    <description>Recent content in Misc on shiva t.k...</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 02:54:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jane Street Puzzle - April 2025</title>
+      <link>http://localhost:1313/posts/js-puzzle-apr-2025/</link>
+      <pubDate>Tue, 15 Apr 2025 02:54:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/js-puzzle-apr-2025/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.janestreet.com/puzzles/&#34;&gt;Jane Street publish a puzzle&lt;/a&gt; every month or so.&#xA;This is my solution for the April 2025 puzzle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a id=&#34;figure--example-binary-tree&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/js-puzzle-apr-2025.png&#34;&#xA;    alt=&#34;Figure 1: Example Binary Tree&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Example Binary Tree&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;For a fixed \(p\), independently label the nodes of an infinite complete binary tree \(0\) with probability \(p\), and \(1\) otherwise.&#xA;For what \(p\) is there exactly a \(1/2\) probability that there exists an infinite path down the tree that sums to at most \(1\)&#xA;(that is, all nodes visited, with the possible exception of one, will be labeled \(0\)).&#xA;Find this value of \(p\) accurate to ten decimal places.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

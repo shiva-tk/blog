@@ -6,8 +6,15 @@
     <description>Recent content in Categories on shiva t.k...</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2025 03:29:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Apr 2025 02:54:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Misc</title>
+      <link>http://localhost:1313/categories/misc/</link>
+      <pubDate>Tue, 15 Apr 2025 02:54:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/misc/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Films</title>
       <link>http://localhost:1313/categories/films/</link>

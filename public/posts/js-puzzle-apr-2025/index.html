@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Jane Street Puzzle - April 2025</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+    <link href="https://iosevka-webfonts.github.io/iosevka/Iosevka.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+</head>
+<body>
+	<header>
+	<h1>shiva t.k...</h1>
+	<p>
+	<div style="float: right;">just some thoughts.</div>
+	<nav>
+			<a class="menu" href="/">[start.]</a>
+			
+			
+			<a class="menu" href="/posts/">[posts.]</a>
+			
+			<a class="menu" href="/categories/">[categories.]</a>
+			
+			<a class="menu" href="/tags/">[tags.]</a>
+			
+	</nav>
+	</p>
+	
+	<hr>
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Jane Street Puzzle - April 2025</h1>
+			<b><time>15/04/2025 02:54</time></b>
+		       
+		           <a href="/tags/puzzles">puzzles</a>
+        	       
+
+			<div>
+				<p><a href="https://www.janestreet.com/puzzles/">Jane Street publish a puzzle</a> every month or so.
+This is my solution for the April 2025 puzzle.</p>
+<h2 id="problem">Problem</h2>
+<p><a id="figure--example-binary-tree"></a></p>
+<figure><img src="/images/js-puzzle-apr-2025.png"
+    alt="Figure 1: Example Binary Tree"><figcaption>
+      <p><span class="figure-number">Figure 1: </span>Example Binary Tree</p>
+    </figcaption>
+</figure>
+
+<blockquote>
+<p>For a fixed \(p\), independently label the nodes of an infinite complete binary tree \(0\) with probability \(p\), and \(1\) otherwise.
+For what \(p\) is there exactly a \(1/2\) probability that there exists an infinite path down the tree that sums to at most \(1\)
+(that is, all nodes visited, with the possible exception of one, will be labeled \(0\)).
+Find this value of \(p\) accurate to ten decimal places.</p></blockquote>
+<h2 id="approach">Approach</h2>
+<p>Since the problem is defined over an infinite binary tree, it feels natural to approach it recursively.
+Maybe we can set up a recurrence relation involving \(p\), and attempt to solve it?
+My first instinct was to try defining the probability of a &ldquo;good&rdquo; path (one with at most a single 1) in terms of the probabilities at the next level of the tree.
+After thinking it through more carefully, I realised that a recurrence based purely on tree layers wouldn’t capture the full picture.
+Since paths can share common prefixes, the recurrence needs to be defined at the level of individual nodes rather than entire layers.
+This way, we can correctly account for how the probability of a valid path depends on the structure and labels along shared parts of the tree.</p>
+<h2 id="solution">Solution</h2>
+<p>Let \(n\) denote a node in a binary tree, with \(n.l\) / \(n.r\) representing the left left / right child nodes respectively.
+We denote a node&rsquo;s label as \(n.x \; \in \; \{0, 1\} \).</p>
+<p>Let&rsquo;s reframe the problem. If there is at least one path where the sum is at most \(1\),
+this is the same as saying that <strong>not</strong> all the paths have a sum of at least 2.</p>
+<p>We can formalise this idea. Define \(S(n)\) as the <em>minimum path sum</em> of a binary tree:
+\[S(n) \; = \; n.x \, + \, \min(S(n.l), \, S(n.r))\]
+In other words, \(S(n)\) represents the smallest possible sum along any infinite path that begins at node \(n\).
+This definition is naturally recursive: the minimum path sum at a given node is its value
+plus the smaller of the minimum path sums of its left and right children.</p>
+<p>Suppose \(S(n) &gt; 1\), this means the minimum path sum is <em>strictly greater</em> than \(1\), i.e.
+all paths have a sum of <em>at least</em> \(2\). We can now define the probability we aim to find.
+Given the root node \(n_{0}\), we are tasked with finding the probability \(1 - P(S(n_{0}) &gt; 1)\).</p>
+<p>Just like we defined \(S(n)\) recursively, we can define \(P(S(n) &gt; 1)\) recursively:
+\[\begin{align*}
+P(S(n) &gt; 1) =&amp; \; p \, \cdot \, P(S(n.l) \, &gt; 1) \, \cdot \, P(S(n.r) \, &gt; 1) \, \cdot \\
+&amp; \; (1 - p) \cdot P(S(n.l) \, &gt; 0) \cdot P(S(n.l) \, &gt; 0)
+\end{align*}\]</p>
+<p>Breaking this down, there&rsquo;s a \(p\) chance that \(n.x = 0\).
+In this case, the current node contributes nothing to the minimum path sum,
+so both children&rsquo;s minimum path sums must be strictly greater than \(1\), for \(n\)&rsquo;s <em>minimum</em> path sum to be strictly greater than 1.
+Concretely, if \(n.x = 0\), then \(S(n) = \min(S(n.l), \, S(n.r)) &gt; 1\) from which it follows that \(S(n.l) &gt; 1\) and \(S(n.r) &gt; 1\).</p>
+<p>Similarly, there&rsquo;s a \(1 - p\) chance that \(n.x = 1\). By applying similar reasoning, we can deduce that if this is the case,
+it must be that \(S(n.l) &gt; 0\) and \(S(n.r) &gt; 0\).</p>
+<p>We can similarly derive a recursive definition for \(P(S(n) &gt; 0)\):
+\[\begin{align*}
+P(S(n) &gt; 1) =&amp; \; p \, \cdot \, P(S(n.l) \, &gt; 0) \, \cdot \, P(S(n.r) \, &gt; 0) \, \cdot \\
+&amp; \; (1 - p)
+\end{align*}\]</p>
+<p>We now note that since the trees are infinite, each subtree is <em>similar</em> to the parent tree.
+This gives us that
+\[\begin{align*}
+P(S(n) \, &gt; 0) &amp;= P(S(n.l) \, &gt; 0) \\
+&amp;= P(S(n.r) \, &gt; 0) \\
+&amp;= P
+\end{align*}\]</p>
+<p>and</p>
+<p>\[\begin{align*}
+P(S(n) \, &gt; 1) &amp;= P(S(n.l) \, &gt; 1) \\
+&amp;= P(S(n.r) \, &gt; 1) \\
+&amp;= Q
+\end{align*}\]</p>
+<p>Note how we label these probabilities \(P\) and \(Q\) for clarity.</p>
+<p>This allows us to rewrite / simplify our equations! We have that:
+\[\begin{align*}
+Q &amp;= p \cdot Q^{2} \, + \, (1-p) \cdot P^{2} \\
+P &amp;= p \cdot P^{2} \, + \, (1-p)
+\end{align*}\]</p>
+<p>We aim to find a value of \(p\) such that \(1 - P(S(n_{0}) &gt; 1) = 1 - Q = 1/2\).
+This allows us to substitute \(Q = 1/2\) into our equations, yielding:
+\[\begin{align*}
+\frac{1}{2} &amp;= \frac{p}{4} \, + \, (1-p) \cdot P^{2} \\
+P &amp;= p \cdot P^{2} \, + \, (1-p)
+\end{align*}\]</p>
+<p>We have two equations with two unknowns. Solving this for a solution where \(p \in [0, 1]\) gives us the solution:
+\[p \approx 0.5306035754\]</p>
+<h2 id="verifying-the-solution-with-a-simulation">Verifying the Solution with a Simulation</h2>
+<p>Before submitting my solution, I built a crude simulation of these randomly generated binary trees.
+Simulating trees of infinite depth is impossible, so as an approximation I chose to model trees of finite depth.</p>
+<p>First I made a python class to randomly generate a tree of a given depth:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BinaryTree</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, p, depth):
+</span></span><span style="display:flex;"><span>        u <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>uniform(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> u <span style="color:#f92672">&lt;=</span> p:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> depth <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>l <span style="color:#f92672">=</span> BinaryTree(p, depth <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> BinaryTree(p, depth <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>l <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>r <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">min_path_sum</span>(self):
+</span></span><span style="display:flex;"><span>        l <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>l<span style="color:#f92672">.</span>min_path_sum() <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>l <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        r <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>r<span style="color:#f92672">.</span>min_path_sum() <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>x <span style="color:#f92672">+</span> min(l, r)
+</span></span></code></pre></div><p>Then I repeatedly generated these binary trees, and measured the proportion of these trees which had a good path.
+I parallelised these experiments to speed up this process. Overall, it took around five minutes to run all of the iterations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_single_simulation</span>(p, depth):
+</span></span><span style="display:flex;"><span>    tree <span style="color:#f92672">=</span> BinaryTree(p, depth)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> tree<span style="color:#f92672">.</span>min_path_sum() <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e"># I.e. contains a &#34;good&#34; path</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Converge to solution for p</span>
+</span></span><span style="display:flex;"><span>    p <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5306035754</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Verify solution by running simulation</span>
+</span></span><span style="display:flex;"><span>    NUM_ITERATIONS <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>    TREE_DEPTH <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> ProcessPoolExecutor() <span style="color:#66d9ef">as</span> executor:
+</span></span><span style="display:flex;"><span>        futures <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            executor<span style="color:#f92672">.</span>submit(run_single_simulation, p, TREE_DEPTH)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(NUM_ITERATIONS)
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>        results <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> tqdm(futures):
+</span></span><span style="display:flex;"><span>            results<span style="color:#f92672">.</span>append(f<span style="color:#f92672">.</span>result())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    count <span style="color:#f92672">=</span> sum(results)
+</span></span><span style="display:flex;"><span>    print(count <span style="color:#f92672">/</span> NUM_ITERATIONS)
+</span></span></code></pre></div><p>This gave me a number close enough to 0.5, which is what we were looking for!</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/posts/js-puzzle-apr-2025/">Jane Street Puzzle - April 2025</a></li>
+				
+				<li><a href="/posts/burning-and-perfect-days/">Burning (2018) and Perfect Days (2023) - Great Hunger</a></li>
+				
+				<li><a href="/posts/note-taking-with-emacs-and-org-roam/">Note Taking with Emacs and Org Roam</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<hr>
+
+	<p> <a class="menu" href="https://www.shiva-tk.xyz">[shiva t.k...]</a>
+	<a class="menu" href="mailto:shivatk01@gmail.com">[shivatk01@gmail.com.]</a>
+	<a class="menu" href="https://github.com/shiva-tk">[github.]</a>
+	<a class="menu" href="https://www.linkedin.com/in/shiva-tk/">[linkedin.]</a>
+	<a class="menu" href="https://www.last.fm/user/shivatk">[last.fm.]</a>
+	<a class="menu" href="https://boxd.it/1FqGJ">[letterboxd.]</a>
+	</p>
+</footer>
+
+</body>
+</html>
