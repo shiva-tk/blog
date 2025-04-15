@@ -320,7 +320,7 @@ it must be that \(S(n.l) > 0\) and \(S(n.r) > 0\).
 
 We can similarly derive a recursive definition for \(P(S(n) > 0)\):
 \[\begin{align*}
-P(S(n) > 1) =& \; p \, \cdot \, P(S(n.l) \, > 0) \, \cdot \, P(S(n.r) \, > 0) \, \cdot \\
+P(S(n) > 0) =& \; p \, \cdot \, P(S(n.l) \, > 0) \, \cdot \, P(S(n.r) \, > 0) \, \cdot \\
              & \; (1 - p)
 \end{align*}\]
 

@@ -112,7 +112,7 @@ Concretely, if \(n.x = 0\), then \(S(n) = \min(S(n.l), \, S(n.r)) &gt; 1\) from 
 it must be that \(S(n.l) &gt; 0\) and \(S(n.r) &gt; 0\).</p>
 <p>We can similarly derive a recursive definition for \(P(S(n) &gt; 0)\):
 \[\begin{align*}
-P(S(n) &gt; 1) =&amp; \; p \, \cdot \, P(S(n.l) \, &gt; 0) \, \cdot \, P(S(n.r) \, &gt; 0) \, \cdot \\
+P(S(n) &gt; 0) =&amp; \; p \, \cdot \, P(S(n.l) \, &gt; 0) \, \cdot \, P(S(n.r) \, &gt; 0) \, \cdot \\
 &amp; \; (1 - p)
 \end{align*}\]</p>
 <p>We now note that since the trees are infinite, each subtree is <em>similar</em> to the parent tree.
