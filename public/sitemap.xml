@@ -46,5 +46,9 @@
   </url><url>
     <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2025-01-12T15:18:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/total-ordering-films/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/recreational-programming/</loc>
   </url>
 </urlset>

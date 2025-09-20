@@ -15,13 +15,13 @@ ul {
     padding: 0;
 }
 
-li {
+ul > li {
     position: relative; /* Enable positioning for pseudo-element */
     padding-left: 40px; /* Space for the custom bullet */
     padding-top: 7px; /* Adjust spacing if necessary */
 }
 
-li::before {
+ul > li::before {
     content: ">"; /* Use > as the bullet symbol */
     position: absolute; /* Position it to the left of the text */
     left: 0; /* Align to the left padding */
@@ -30,7 +30,7 @@ li::before {
 }
 
 /* Remove margins from <p> inside <li> */
-li > p {
+ul > li > p {
     margin: 0;
 }
 
