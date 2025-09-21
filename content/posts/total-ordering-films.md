@@ -2,6 +2,7 @@
 title = "A Total Ordering on Films"
 author = ["Shiva Tamil Kumaran"]
 date = 2025-09-20T18:32:00+01:00
+tags = ["programming", "films"]
 categories = ["recreational-programming"]
 draft = false
 +++

@@ -2,7 +2,7 @@
 title = "Burning (2018) and Perfect Days (2023) - Great Hunger"
 author = ["Shiva Tamil Kumaran"]
 date = 2025-01-29T03:29:00+00:00
-tags = ["foreign-films", "deep-dive"]
+tags = ["films", "film-analysis"]
 categories = ["films"]
 draft = false
 +++

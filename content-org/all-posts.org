@@ -106,7 +106,7 @@ This is just a glimpse into what's possible. In future posts I may cover how I t
 with org mode.
 
 * Programming :@recreational_programming:
-** DONE A Total Ordering on Films
+** DONE A Total Ordering on Films :programming:films:
 CLOSED: [2025-09-20 Sat 18:32]
 :PROPERTIES:
 :EXPORT_FILE_NAME: total-ordering-films
@@ -266,7 +266,7 @@ Using Filmsmash, I was able to rank definitively my top ten films of all time.
 
 * Films :@films:
 
-** DONE Burning (2018) and Perfect Days (2023) - Great Hunger :foreign_films:deep_dive:
+** DONE Burning (2018) and Perfect Days (2023) - Great Hunger :films:film_analysis:
 CLOSED: [2025-01-29 Wed 03:29]
 :PROPERTIES:
 :EXPORT_FILE_NAME: burning-and-perfect-days

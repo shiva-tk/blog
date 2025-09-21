@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/total-ordering-films/</loc>
+    <lastmod>2025-09-20T18:32:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-04-15T02:54:00+01:00</lastmod>
+    <lastmod>2025-09-20T18:32:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-20T18:32:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/recreational-programming/</loc>
+    <lastmod>2025-09-20T18:32:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-20T18:32:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/js-puzzle-apr-2025/</loc>
     <lastmod>2025-04-15T02:54:00+01:00</lastmod>
@@ -11,13 +23,7 @@
     <loc>http://localhost:1313/categories/misc/</loc>
     <lastmod>2025-04-15T02:54:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-04-15T02:54:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/puzzles/</loc>
-    <lastmod>2025-04-15T02:54:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-15T02:54:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -46,9 +52,5 @@
   </url><url>
     <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2025-01-12T15:18:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/total-ordering-films/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/recreational-programming/</loc>
   </url>
 </urlset>
