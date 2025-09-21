@@ -16,9 +16,7 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
     <link href="https://iosevka-webfonts.github.io/iosevka/Iosevka.css" rel="stylesheet" />
-	{{ if not .Site.IsServer }}
 	<script data-goatcounter="https://shivatk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-	{{ end }}
 	{{ partial "katex.html" . }}
 </head>
 <body>
