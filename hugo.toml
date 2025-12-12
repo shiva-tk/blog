@@ -5,7 +5,7 @@ theme = "smol"
 
 # Parameters
 [params]
-    subtitle = "just some thoughts."
+    subtitle = "ฅ^•ﻌ•^ฅ"
     dateFmt = "02/01/2006 15:04"
 
 # Header
@@ -28,30 +28,10 @@ theme = "smol"
         url = "/tags/"
         weight = 3
 
-# Footer
-  [[menu.footer]]
-        name = "shivatk01@gmail.com"
-        url = "mailto:shivatk01@gmail.com"
-        weight = 1
-
-  [[menu.footer]]
-        name = "github"
-        url = "https://github.com/shiva-tk"
-        weight = 2
-
-  [[menu.footer]]
-        name = "linkedin"
-        url = "https://www.linkedin.com/in/shiva-tk/"
-        weight = 3
-
-  [[menu.footer]]
-        name = "letterboxd"
-        url = "https://boxd.it/1FqGJ"
-        weight = 4
-
-  [[menu.footer]]
-        name = "last.fm"
-        url = "https://www.last.fm/user/shivatk"
+  [[menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "https://shiva-tk.xyz"
         weight = 4
 
 [markup.goldmark.renderer]

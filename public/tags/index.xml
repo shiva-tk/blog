@@ -22,33 +22,5 @@
       <guid>http://localhost:1313/tags/programming/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Puzzles</title>
-      <link>http://localhost:1313/tags/puzzles/</link>
-      <pubDate>Tue, 15 Apr 2025 02:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/puzzles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Film-Analysis</title>
-      <link>http://localhost:1313/tags/film-analysis/</link>
-      <pubDate>Wed, 29 Jan 2025 03:29:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/film-analysis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
-      <pubDate>Sun, 12 Jan 2025 15:18:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/emacs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Org</title>
-      <link>http://localhost:1313/tags/org/</link>
-      <pubDate>Sun, 12 Jan 2025 15:18:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/org/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

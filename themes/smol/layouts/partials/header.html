@@ -1,12 +1,12 @@
 <header>
-	<h1>⊢ shiva t.k...</h1>
+	<h1 class="title">Shiva's Blog</h1>
 	<p>
 	<div style="float: right;">{{ .Site.Params.subtitle }}</div>
 	<nav>
-			<a class="menu" href="/">[start.]</a>
+			<a class="menu" href="/">[start]</a>
 			{{ with .Site.Menus.main }}
 			{{ range . }}
-			<a class="menu" href="{{ .URL | relURL }}">[{{ .Name }}.]</a>
+			<a class="menu" href="{{ .URL | relURL }}">[{{ .Name }}]</a>
 			{{ end }}
 	</nav>
 	</p>
