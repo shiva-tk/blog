@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shiva t.k...</title>
+    <title>Shiva&#39;s Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on shiva t.k...</description>
+    <description>Recent content on Shiva&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Sep 2025 18:32:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 00:55:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Note Taking</title>
+      <link>http://localhost:1313/posts/note-taking/</link>
+      <pubDate>Sat, 13 Dec 2025 00:55:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/note-taking/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/roam-graph.png&#34;&#xA;    alt=&#34;Figure 1: Graph view of my notes and their links.&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Graph view of my notes and their links.&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Having recently started a PhD, I&amp;rsquo;ve been experimenting with ways of&#xA;taking notes. I was searching for a method of organising papers&#xA;I&amp;rsquo;ve read, to accrue a library that I can come back to as needed.&#xA;I also needed a way to associate notes with these papers.&#xA;I had certain requirements of any potential solution:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Total Ordering on Films</title>
       <link>http://localhost:1313/posts/total-ordering-films/</link>

@@ -1,6 +1,117 @@
 #+hugo_base_dir: ../
 
+* Research
+
+** DONE On Note Taking
+CLOSED: [2025-12-13 Sat 00:55]
+:PROPERTIES:
+:EXPORT_FILE_NAME: note-taking
+:END:
+
+#+CAPTION: Graph view of my notes and their links.
+[[/images/roam-graph.png]]
+
+Having recently started a PhD, I've been experimenting with ways of
+taking notes. I was searching for a method of organising papers
+I've read, to accrue a library that I can come back to as needed.
+I also needed a way to associate notes with these papers.
+I had certain requirements of any potential solution:
+
+- *Seamless.* For notes to be useful, they need to be complete,
+  consistent and thorough. In my experience, I've found that if the
+  effort for note taking is too high, it is inevitable that
+  notes will be incomplete, inconsistent and low quality.
+  Note taking should be easy and maintainable, not a chore!
+- *Minimal.* At the same time, hyper-optimised power user work-flows
+  are undesirable. They take /forever/ to set up, and even longer
+  to maintain. Anecdotally, I find myself using the most useful
+  5% of workflows 95% of the time.
+- *Discoverable.* After taking a note, it should be easy to find it
+  again. Knowledge should be available on demand.
+- *Free (and Open Source).* This goes without saying!
+
+With these principles in mind, I want to demonstrate the system that
+I've come up with and have great success with personally.
+
+*** Zotero
+[[https://www.zotero.org][Zotero]] is an open source reference-management tool that helps you
+collect and organize sources for research. It allows you to
+save papers to your library with one click of a browser extension!
+
+[[/images/zotero.gif]]
+
+*** Org Roam
+[[https://orgmode.org][Org mode]] is a mode in the [[https://www.gnu.org/software/emacs/][Emacs]] [fn:2]  text editor for working with
+text based note files. One can think of it like markdown,
+but more extensible and /much more powerful/.
+It supports rich note taking features, like \(\LaTeX\) support,
+code blocks, tables, images, links etc.
+[[https://www.orgroam.com][Org roam]] is an extension built atop org, which allows
+you to organise and link your notes, in the style of
+[[https://obsidian.md][Obsidian]] or [[https://roamresearch.com][Roam Research]], by connecting notes through backlinks.
+
+My choice of tool here is because a) I already use and love
+Emacs and b) the extensibility of Org Roam makes it possible to
+personalise seamless workflows for my needs.
+
+Let's say that I want to take notes about the paper I've just added
+to my library. Having integrated Org Roam with Zotero, I can open
+it directly with a few key presses, with a handy template filled
+ready for me:
+
+[[/images/org-roam-lit-note.gif]]
+
+*** Org Noter
+
+Naively taking notes, copying information from the PDF seems like
+a waste of time: notes should augment what is written in the paper.
+It is necessary for any notes that are taken to be contextualised
+by what is in the paper. This point is extremely important,
+and usually a large hinderence to note-taking. One solution is to
+annotate the PDF directly. However this comes at the cost of
+discoverability. It becomes difficult to organise and link together
+ideas that have been scribbled in the margins of a PDF.
+We should learn a thing or two from [[https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem][Fermat's struggles]].
+
+This is where org noter comes in. It is an extension to Org Mode
+that syncs your notes with a PDF! It does this by storing metadata
+(in text) within the org document. The simplicity yet startling
+power of Org Mode is really starting to shine here! Here it is in
+action on the note we started to capture earlier:
+
+[[/images/org-noter.gif]]
+
+*** Finding and Linking Notes
+
+As I mentioned earlier, Org Roam is what we're using to organise
+our notes. It allows one to: Search for notes...
+
+[[/images/org-roam-find.gif]]
+
+Link to other notes...
+
+[[/images/org-roam-insert-link.gif]]
+
+Cite papers...
+
+[[/images/org-cite-insert.gif]]
+
+From the citation, one can open the note we created for the paper,
+or open the PDF for the paper itself! Org roam also shows you backlinks,
+allowing you to see other notes that link to it.
+
+[[/images/org-roam-backlink.png]]
+
+All these features make it effortless to find and traverse notes.
+
+*** Configuration
+
+All that being said, what about the requirement for minimalism?
+It turns out, most of this functionality can be achieved out of the box with
+[[https://github.com/doomemacs][Doom Emacs]]. My configuration can be found [[https://github.com/shiva-tk/axolotl/blob/main/.doom.d/config.org][here]].
+
 * Programming :@recreational_programming:
+
 ** DONE A Total Ordering on Films :programming:films:
 CLOSED: [2025-09-20 Sat 18:32]
 :PROPERTIES:
@@ -159,8 +270,10 @@ Using Filmsmash, I was able to rank definitively my top ten films of all time.
 10. Before Sunset (2004), Richard Linklater
     [[/images/before-sunset.jpg]]
 
-
 * Footnotes
+[fn:2] Google employees clearly have bad taste in text editors:
+[[/images/emacs-google.png]]
+
 
 [fn:1] Reading through the screenplay for /The Social Network/, to find the relevant quote,
 I was amused to be reminded that Mark Zuckerberg also had a blog (in the film at least).

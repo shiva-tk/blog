@@ -1,6 +1,6 @@
 baseURL = 'https://blog.shiva-tk.xyz/'
 languageCode = 'en-us'
-title = 'shiva t.k...'
+title = "Shiva's Blog"
 theme = "smol"
 
 # Parameters

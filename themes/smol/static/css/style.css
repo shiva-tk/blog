@@ -6,7 +6,7 @@ code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
 pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
 article{padding:24px 0}
 .center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
-figcaption {color: #c6c7c7; font: 12px/1.5 "Iosevka Web", monospace; text-align: center;}
+figcaption {color: #c6c7c7; font: 12px/1.5 "Libertinus Serif", monospace; text-align: center;}
 figure {margin: auto}
 img {display: block; max-width: 100%; height: auto; margin: auto}
 
@@ -35,4 +35,13 @@ hr {
     margin-bottom: 20px;
     margin-top: 20px;
     color: #c6c7c7;
+}
+
+ul, ol {
+    margin: 1.2em 0;
+    padding-left: 1.6em;
+}
+
+li {
+    margin: 0.4em 0;
 }

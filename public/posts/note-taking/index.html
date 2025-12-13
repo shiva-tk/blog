@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>On Note Taking</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+    <link href="https://iosevka-webfonts.github.io/iosevka/Iosevka.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<script data-goatcounter="https://shivatk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+</head>
+<body>
+	<header>
+	<h1 class="title">Shiva's Blog</h1>
+	<p>
+	<div style="float: right;">ฅ^•ﻌ•^ฅ</div>
+	<nav>
+			<a class="menu" href="/">[start]</a>
+			
+			
+			<a class="menu" href="/posts/">[posts]</a>
+			
+			<a class="menu" href="/categories/">[categories]</a>
+			
+			<a class="menu" href="/tags/">[tags]</a>
+			
+			<a class="menu" href="https://shiva-tk.xyz">[about]</a>
+			
+	</nav>
+	</p>
+	
+	<hr>
+</header>
+
+	
+	<main>
+		<article>
+			<h1>On Note Taking</h1>
+			<b><time>13/12/2025 00:55</time></b>
+		       
+
+			<div>
+				<figure><img src="/images/roam-graph.png"
+    alt="Figure 1: Graph view of my notes and their links."><figcaption>
+      <p><span class="figure-number">Figure 1: </span>Graph view of my notes and their links.</p>
+    </figcaption>
+</figure>
+
+<p>Having recently started a PhD, I&rsquo;ve been experimenting with ways of
+taking notes. I was searching for a method of organising papers
+I&rsquo;ve read, to accrue a library that I can come back to as needed.
+I also needed a way to associate notes with these papers.
+I had certain requirements of any potential solution:</p>
+<ul>
+<li><strong>Seamless.</strong> For notes to be useful, they need to be complete,
+consistent and thorough. In my experience, I&rsquo;ve found that if the
+effort for note taking is too high, it is inevitable that
+notes will be incomplete, inconsistent and low quality.
+Note taking should be easy and maintainable, not a chore!</li>
+<li><strong>Minimal.</strong> At the same time, hyper-optimised power user work-flows
+are undesirable. They take <em>forever</em> to set up, and even longer
+to maintain. Anecdotally, I find myself using the most useful
+5% of workflows 95% of the time.</li>
+<li><strong>Discoverable.</strong> After taking a note, it should be easy to find it
+again. Knowledge should be available on demand.</li>
+<li><strong>Free (and Open Source).</strong> This goes without saying!</li>
+</ul>
+<p>With these principles in mind, I want to demonstrate the system that
+I&rsquo;ve come up with and have great success with personally.</p>
+<h2 id="zotero">Zotero</h2>
+<p><a href="https://www.zotero.org">Zotero</a> is an open source reference-management tool that helps you
+collect and organize sources for research. It allows you to
+save papers to your library with one click of a browser extension!</p>
+<figure><img src="/images/zotero.gif">
+</figure>
+
+<h2 id="org-roam">Org Roam</h2>
+<p><a href="https://orgmode.org">Org mode</a> is a mode in the <a href="https://www.gnu.org/software/emacs/">Emacs</a> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>  text editor for working with
+text based note files. One can think of it like markdown,
+but more extensible and <em>much more powerful</em>.
+It supports rich note taking features, like \(\LaTeX\) support,
+code blocks, tables, images, links etc.
+<a href="https://www.orgroam.com">Org roam</a> is an extension built atop org, which allows
+you to organise and link your notes, in the style of
+<a href="https://obsidian.md">Obsidian</a> or <a href="https://roamresearch.com">Roam Research</a>, by connecting notes through backlinks.</p>
+<p>My choice of tool here is because a) I already use and love
+Emacs and b) the extensibility of Org Roam makes it possible to
+personalise seamless workflows for my needs.</p>
+<p>Let&rsquo;s say that I want to take notes about the paper I&rsquo;ve just added
+to my library. Having integrated Org Roam with Zotero, I can open
+it directly with a few key presses, with a handy template filled
+ready for me:</p>
+<figure><img src="/images/org-roam-lit-note.gif">
+</figure>
+
+<h2 id="org-noter">Org Noter</h2>
+<p>Naively taking notes, copying information from the PDF seems like
+a waste of time: notes should augment what is written in the paper.
+It is necessary for any notes that are taken to be contextualised
+by what is in the paper. This point is extremely important,
+and usually a large hinderence to note-taking. One solution is to
+annotate the PDF directly. However this comes at the cost of
+discoverability. It becomes difficult to organise and link together
+ideas that have been scribbled in the margins of a PDF.
+We should learn a thing or two from <a href="https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">Fermat&rsquo;s struggles</a>.</p>
+<p>This is where org noter comes in. It is an extension to Org Mode
+that syncs your notes with a PDF! It does this by storing metadata
+(in text) within the org document. The simplicity yet startling
+power of Org Mode is really starting to shine here! Here it is in
+action on the note we started to capture earlier:</p>
+<figure><img src="/images/org-noter.gif">
+</figure>
+
+<h2 id="finding-and-linking-notes">Finding and Linking Notes</h2>
+<p>As I mentioned earlier, Org Roam is what we&rsquo;re using to organise
+our notes. It allows one to: Search for notes&hellip;</p>
+<figure><img src="/images/org-roam-find.gif">
+</figure>
+
+<p>Link to other notes&hellip;</p>
+<figure><img src="/images/org-roam-insert-link.gif">
+</figure>
+
+<p>Cite papers&hellip;</p>
+<figure><img src="/images/org-cite-insert.gif">
+</figure>
+
+<p>From the citation, one can open the note we created for the paper,
+or open the PDF for the paper itself! Org roam also shows you backlinks,
+allowing you to see other notes that link to it.</p>
+<figure><img src="/images/org-roam-backlink.png">
+</figure>
+
+<p>All these features make it effortless to find and traverse notes.</p>
+<h2 id="configuration">Configuration</h2>
+<p>All that being said, what about the requirement for minimalism?
+It turns out, most of this functionality can be achieved out of the box with
+<a href="https://github.com/doomemacs">Doom Emacs</a>. My configuration can be found <a href="https://github.com/shiva-tk/axolotl/blob/main/.doom.d/config.org">here</a>.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Google employees clearly have bad taste in text editors:
+
+<figure>
+  <img src="/images/emacs-google.png" alt="" />
+</figure>
+
+
+&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/posts/note-taking/">On Note Taking</a></li>
+				
+				<li><a href="/posts/total-ordering-films/">A Total Ordering on Films</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<hr>
+
+	<p>
+	</p>
+</footer>
+
+</body>
+</html>
