@@ -1,8 +1,8 @@
 #+hugo_base_dir: ../
 
-* Research
+* Research :@research:
 
-** DONE On Note Taking
+** DONE On Note Taking :emacs:org:
 CLOSED: [2025-12-13 Sat 00:55]
 :PROPERTIES:
 :EXPORT_FILE_NAME: note-taking

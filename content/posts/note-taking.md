@@ -2,6 +2,8 @@
 title = "On Note Taking"
 author = ["Shiva"]
 date = 2025-12-13T00:55:00+00:00
+tags = ["emacs", "org"]
+categories = ["research"]
 draft = false
 +++
 
