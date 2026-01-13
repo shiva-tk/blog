@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on Shiva&#39;s Blog</title>
+    <link>http://localhost:1313/categories/writing/</link>
+    <description>Recent content in Writing on Shiva&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tales from the Golden Peninsula</title>
+      <link>http://localhost:1313/posts/golden-peninsula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/golden-peninsula/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s 23:30 on a Saturday as I write this.&#xA;Really I should be working towards an upcoming paper deadline.&#xA;However, having just watched &lt;em&gt;The Motorcycle Diaries&lt;/em&gt;,&#xA;I feel suddenly enthused to write this instead.&lt;/p&gt;&#xA;&lt;p&gt;Though my time spent travelling South East Asia was incomparably less&#xA;impactful than Ernesto&amp;rsquo;s time on the roads of South America,&#xA;I look back on my time travelling fondly.&#xA;I spent the last half an hour recounting the tales in my head,&#xA;recalling the faces I saw and the stories I exchanged with them.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

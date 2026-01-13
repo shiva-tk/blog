@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on shiva t.k...</title>
+    <title>Research on Shiva&#39;s Blog</title>
     <link>http://localhost:1313/categories/research/</link>
-    <description>Recent content in Research on shiva t.k...</description>
+    <description>Recent content in Research on Shiva&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2025 15:18:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 00:55:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Note Taking with Emacs and Org Roam</title>
-      <link>http://localhost:1313/posts/note-taking-with-emacs-and-org-roam/</link>
-      <pubDate>Sun, 12 Jan 2025 15:18:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/note-taking-with-emacs-and-org-roam/</guid>
-      <description>&lt;p&gt;&lt;a id=&#34;figure--roam-graph&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/roam-graph.png&#34;&#xA;    alt=&#34;Figure 1: Graph view of my notes so far&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Graph view of my notes so far&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I&amp;rsquo;ve recently started working on my master&amp;rsquo;s thesis, and as such I&amp;rsquo;ve been looking for a&#xA;good way to take notes. I need to be able to capture notes on my reading, as well as any&#xA;ideas or thoughts that I have. I&amp;rsquo;ve previously experimented with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Notion&lt;/strong&gt; - I did like how feature rich it was, but I disliked the rigid organisation&#xA;structure. I felt forced to organise everything into a heirarchical pages and sub-pages.&#xA;Also, it felt like once I committed to &lt;em&gt;Notion&lt;/em&gt;, it wouldn&amp;rsquo;t be possible to switch&#xA;platforms if I wanted to.&lt;/p&gt;</description>
+      <title>On Note Taking</title>
+      <link>http://localhost:1313/posts/note-taking/</link>
+      <pubDate>Sat, 13 Dec 2025 00:55:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/note-taking/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/roam-graph.png&#34;&#xA;    alt=&#34;Figure 1: Graph view of my notes and their links.&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Graph view of my notes and their links.&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Having recently started a PhD, I&amp;rsquo;ve been experimenting with ways of&#xA;taking notes. I was searching for a method of organising papers&#xA;I&amp;rsquo;ve read, to accrue a library that I can come back to as needed.&#xA;I also needed a way to associate notes with these papers.&#xA;I had certain requirements of any potential solution:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

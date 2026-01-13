@@ -1,5 +1,55 @@
 #+hugo_base_dir: ../
 
+* Writing :@writing:
+
+** TODO Tales from the Golden Peninsula
+:PROPERTIES:
+:EXPORT_FILE_NAME: golden-peninsula
+:END:
+
+It's 23:30 on a Saturday as I write this.
+Really I should be working towards an upcoming paper deadline.
+However, having just watched /The Motorcycle Diaries/,
+I feel suddenly enthused to write this instead.
+
+Though my time spent travelling South East Asia was incomparably less
+impactful than Ernesto's time on the roads of South America,
+I look back on my time travelling fondly.
+I spent the last half an hour recounting the tales in my head,
+recalling the faces I saw and the stories I exchanged with them.
+
+It was the summer after completing my Master's degree.
+The prior few months had been taxing but immensely rewarding.
+Since that Spring I'd been working on my Master's thesis.
+This is a period of my life I'll look back on with nostalgia,
+it was my first taste of research and academia.
+I found myself lost in the subject area of my thesis;
+it consumed my every waking hour. I'd work furiously during the day
+and fall asleep feeling tired, but deeply contented.
+I'd just started dating my girlfriend, and when I was too tired to work,
+I spent my evenings with her. We would mindlessly watch How I Met Your Mother
+and eat instant noodles in her cheap yet characterful student flat near Ravenscourt Park.
+We'd spend evenings watching the sun set from Hammersmith Bridge.
+"Bridge Walk?", I'd ask, when my mind felt too tired to make progress on
+whatever problem I had been dancing with that day.
+It was a beautiful spring that melted into a warm summer.
+
+A common sentiment among people my age is that
+"University ends on a random Wednesday in June".
+In my case, it was a Tuesday -- the 24th, the day after my birthday.
+I hadn't celebrated my birthday, as I was preparing for the final
+hurdle of my degree, an oral presentation about my thesis.
+Even after completing this, I didn't have the time to process the sudden,
+jarring shift from being a student, to not being one anymore.
+I now had to turn my attention to a task that I'd been ignoring
+while occupied with my thesis. I needed to prepare for my travels that summer.
+
+After a few hurried days spent emptying my flat, getting the necessary vaccinations,
+and arranging various travel documents, I found myself on a plane.
+My destination was Chennai, India, where I spent a week with my grandparents.
+As I arrived, I joined my
+
+
 * Research :@research:
 
 ** DONE On Note Taking :emacs:org:
@@ -110,7 +160,8 @@ All that being said, what about the requirement for minimalism?
 It turns out, most of this functionality can be achieved out of the box with
 [[https://github.com/doomemacs][Doom Emacs]]. My configuration can be found [[https://github.com/shiva-tk/axolotl/blob/main/.doom.d/config.org][here]].
 
-* Programming :@recreational_programming:
+
+* Projects :@projects:
 
 ** DONE A Total Ordering on Films :programming:films:
 CLOSED: [2025-09-20 Sat 18:32]
@@ -270,7 +321,37 @@ Using Filmsmash, I was able to rank definitively my top ten films of all time.
 10. Before Sunset (2004), Richard Linklater
     [[/images/before-sunset.jpg]]
 
+
+** DONE Now is now. Next time is next time.
+CLOSED: [2026-01-13 Tue 15:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: now-is-now
+:END:
+
+#+hugo: {{< youtube wSC_qMfxmek >}}
+
+A film that's stuck with me since I watched it is Wim Wender's /Perfect Days/.
+Perfect Days follows /Hirayama/, a janitor in Tokyo, through his monotonous, unchanging daily routine.
+Despite this seemingly simplistic lifestyle, Hirayama appears (on the surface at least) deeply contented.
+
+The film serves as a meditation on the importance of being /present/.
+Hirayama is present for every small moment of his day; he takes pleasure in watching the sunlight filter through the trees,
+in the books he reads, and in caring for his Bonsai trees.
+
+This was a sentiment which resonated with me deeply. At the time, I was in the penultimate year of my undergraduate degree,
+and I realised that my time at university was quickly slipping by. I made a silent promise to myself to be more present,
+to cherish every moment and appreciate the people who I shared them with.
+
+It was this silent promise that served as the inspiration for this project.
+I had a sense that one day, my friends and I would look back on this period in our lives with nostalgia.
+I wanted to capture this feeling, by filming moments from my life, small and large.
+On a whim, I convinced my younger sister to let me borrow her digital camera (it was really our mum's old camera),
+and I went through the year, trying to take videos whenever I could.
+
+After much condensing, this is the result! I hope you enjoy.
+
 * Footnotes
+
 [fn:2] Google employees clearly have bad taste in text editors:
 [[/images/emacs-google.png]]
 

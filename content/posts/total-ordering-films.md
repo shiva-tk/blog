@@ -3,7 +3,7 @@ title = "A Total Ordering on Films"
 author = ["Shiva"]
 date = 2025-09-20T18:32:00+01:00
 tags = ["programming", "films"]
-categories = ["recreational-programming"]
+categories = ["projects"]
 draft = false
 +++
 

@@ -6,14 +6,6 @@
     <description>Recent content in Recreational-Programming on Shiva&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Sep 2025 18:32:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/recreational-programming/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A Total Ordering on Films</title>
-      <link>http://localhost:1313/posts/total-ordering-films/</link>
-      <pubDate>Sat, 20 Sep 2025 18:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/total-ordering-films/</guid>
-      <description>&lt;p&gt;The train of thought that culminated in this project set off when my good friend (Rish)&#xA;sent me a list compiled by the New York Times of the &amp;ldquo;&lt;a href=&#34;https://www.nytimes.com/interactive/2025/movies/best-movies-21st-century.html&#34;&gt;100 Best Movies of the 21st Century&lt;/a&gt;&amp;rdquo;.&#xA;Scrolling through the list idle mindedly, I picked out the films which I&amp;rsquo;d seen,&#xA;silently agreeing with the list for including them. However, when given more thought,&#xA;I started to wonder the methodology behind this ranking.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

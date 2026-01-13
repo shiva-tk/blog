@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Shiva&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Sep 2025 18:32:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 00:55:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Note Taking</title>
+      <link>http://localhost:1313/posts/note-taking/</link>
+      <pubDate>Sat, 13 Dec 2025 00:55:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/note-taking/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/roam-graph.png&#34;&#xA;    alt=&#34;Figure 1: Graph view of my notes and their links.&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Graph view of my notes and their links.&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Having recently started a PhD, I&amp;rsquo;ve been experimenting with ways of&#xA;taking notes. I was searching for a method of organising papers&#xA;I&amp;rsquo;ve read, to accrue a library that I can come back to as needed.&#xA;I also needed a way to associate notes with these papers.&#xA;I had certain requirements of any potential solution:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Total Ordering on Films</title>
       <link>http://localhost:1313/posts/total-ordering-films/</link>
@@ -16,11 +23,11 @@
       <description>&lt;p&gt;The train of thought that culminated in this project set off when my good friend (Rish)&#xA;sent me a list compiled by the New York Times of the &amp;ldquo;&lt;a href=&#34;https://www.nytimes.com/interactive/2025/movies/best-movies-21st-century.html&#34;&gt;100 Best Movies of the 21st Century&lt;/a&gt;&amp;rdquo;.&#xA;Scrolling through the list idle mindedly, I picked out the films which I&amp;rsquo;d seen,&#xA;silently agreeing with the list for including them. However, when given more thought,&#xA;I started to wonder the methodology behind this ranking.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>On Note Taking</title>
-      <link>http://localhost:1313/posts/note-taking/</link>
+      <title>Tales from the Golden Peninsula</title>
+      <link>http://localhost:1313/posts/golden-peninsula/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/note-taking/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/roam-graph.png&#34;&#xA;    alt=&#34;Figure 1: Graph view of my notes and their links.&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;&lt;span class=&#34;figure-number&#34;&gt;Figure 1: &lt;/span&gt;Graph view of my notes and their links.&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Having recently started a PhD, I&amp;rsquo;ve been experimenting with ways of&#xA;taking notes. I was searching for a method of organising papers&#xA;I&amp;rsquo;ve read, to accrue a library that I can come back to as needed.&#xA;I also needed a way to associate notes with these papers.&#xA;I had certain requirements of any potential solution:&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/golden-peninsula/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s 23:30 on a Saturday as I write this.&#xA;Really I should be working towards an upcoming paper deadline.&#xA;However, having just watched &lt;em&gt;The Motorcycle Diaries&lt;/em&gt;,&#xA;I feel suddenly enthused to write this instead.&lt;/p&gt;&#xA;&lt;p&gt;Though my time spent travelling South East Asia was incomparably less&#xA;impactful than Ernesto&amp;rsquo;s time on the roads of South America,&#xA;I look back on my time travelling fondly.&#xA;I spent the last half an hour recounting the tales in my head,&#xA;recalling the faces I saw and the stories I exchanged with them.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
