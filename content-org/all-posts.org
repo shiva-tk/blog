@@ -322,7 +322,7 @@ Using Filmsmash, I was able to rank definitively my top ten films of all time.
     [[/images/before-sunset.jpg]]
 
 
-** DONE Now is now. Next time is next time.
+** DONE Now is now. Next time is next time. :films:
 CLOSED: [2026-01-13 Tue 15:27]
 :PROPERTIES:
 :EXPORT_FILE_NAME: now-is-now
